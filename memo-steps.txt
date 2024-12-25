@@ -1,36 +1,3 @@
 https://www.youtube.com/watch?v=DgVjEo3OGBI&list=PLpXfHEl2fzl7a7p4ntTmdjmNSD1iEYXrm&ab_channel=LesJackson
-last pause 3:25:03
-
-creating the net api 
-creating models
-create db context
-update startup
-create seed data
-create get set dtos
-
-create dockerfile
-docker build -t soufianeiha/platformservice --> CREATES IMAGE
-docker run -p 8080:8080 -d soufianeiha/platformservice      --> CREATES CONTAINER
-test app running on docker on port 8080 --> OK
-
-install kube
-create platforms-depl.yaml
-kubectl apply -f platforms-depl.yaml --> CREATES DEPLOYMENTS (pod + container)
-kubectl get deployments --> check
-
- platforms-np-srv.yaml --> create notdeport (specify port 8080 since net8)
- kubectl apply -f platforms-np-srv.yaml --> create nodeport service
- kubectl get services --> check
- use nodeport port to test app running on kube
-
-
-created commandsService
-added end point  which does an http post request whenever a platform is created in platforms service
-create an appsettings.production.json file --> specified clusterip command service name 
-create a commands-depl.yaml, also apply it 
-added to platforms-depl.yaml code for cluster ip
-added the same for commands-depl.yaml 
-did a restart of Kubernetes for platforms --> kubectl rollout restart deployment platforms-depl
-
-last pause 4:44:00
-
+check all the memo in 
+https://docs.google.com/document/d/134o04a5I6DVDTciQWp946H7CBZo4bOyUXSYjJ_ltssQ/edit?tab=t.0
