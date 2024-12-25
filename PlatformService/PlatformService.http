@@ -1,0 +1,6 @@
+@PlatformService_HostAddress = http://localhost:5107
+
+GET {{PlatformService_HostAddress}}/
+Accept: application/json
+
+###
